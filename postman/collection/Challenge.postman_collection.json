@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "d34778f5-33ba-4197-9dd1-a8f11e020bcb",
+		"name": "Challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20095419"
+	},
+	"item": [
+		{
+			"name": "Get Calculation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{path}}/api/v1/calculator?number1=5&number2=5",
+					"host": [
+						"{{path}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"calculator"
+					],
+					"query": [
+						{
+							"key": "number1",
+							"value": "5"
+						},
+						{
+							"key": "number2",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get logs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{path}}/api/v1/calculator/logs?page=0&size=3",
+					"host": [
+						"{{path}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"calculator",
+						"logs"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Mock",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{pathMock}}/percentage",
+					"host": [
+						"{{pathMock}}"
+					],
+					"path": [
+						"percentage"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
